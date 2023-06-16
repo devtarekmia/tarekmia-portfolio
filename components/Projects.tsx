@@ -11,7 +11,7 @@ export default function Projects({ }: Props) {
     <div className='min-h-screen flex flex-col relative text-center md:text-left max-w-full px-10 justify-evenly mx-auto items-center'>
       <h3 className='absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-xl'>projects</h3>
 
-      <div className='relative w-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory snap-always z-20 mb-30 md:mb-20 scrollbar-none hover:scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#7928ca] scrollbar-corner-[#7928ca] scrollbar-thumb-rounded-xl'>
+      <div className='relative w-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory snap-always z-20 mb-30 md:mb-20 scrollbar-none hover:scrollbar-thin scrollbar-track-[#14121c] scrollbar-thumb-[#7928ca] scrollbar-corner-[#7928ca] scrollbar-thumb-rounded-xl'>
 
         {projects.map((project, i) => (
           <div key={i} className='min-w-min max-w-sm sm:max-w-xl md:max-w-4xl xl:max-w-5xl flex flex-col items-center justify-evenly flex-shrink-0 snap-center space-y-5 lg:mt-6 p-10 md:p-16 2xl:p-24'>

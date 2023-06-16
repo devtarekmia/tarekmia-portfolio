@@ -7,7 +7,7 @@ type Props = {}
 
 export default function ExperienceCard({ }: Props) {
   return (
-    <article className='mt-28 md:mt-32 flex flex-col rounded-lg items-center space-y-2 xl:space-y-7 flex-shrink-0 min-w-min max-w-xs sm:max-w-md md:max-w-2xl xl:max-w-4xl snap-center bg-[#292929]/60 hover:bg-[#292929] p-10 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    <article className='mt-28 md:mt-32 flex flex-col rounded-lg items-center space-y-2 xl:space-y-7 flex-shrink-0 min-w-min max-w-xs sm:max-w-md md:max-w-2xl xl:max-w-4xl snap-center bg-[#14121c] hover:bg-[#27253D]/40 p-10 cursor-pointer transition-opacity duration-200 overflow-hidden'>
       <motion.div
         initial={{
           y: -100,
@@ -37,7 +37,7 @@ export default function ExperienceCard({ }: Props) {
       <div className='text-left px-0 xl:px-10 space-y-1 pt-3 xl:pt-0'>
         <h4 className='text-3xl md:text-4xl font-light'>Work header</h4>
         <p className='font-bold text-xl md:text-2xl mt-1 opacity-80 hover:opacity-100 transition-opacity duration-200'>Company</p>
-        <div className='flex space-x-3'>
+        <div className='flex space-x-3 pt-2'>
           <Image
             className='w-10 h-10 object-cover rounded-full opacity-80 hover:opacity-100 transition-opacity duration-200'
             src="/vercel.svg"

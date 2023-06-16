@@ -3,12 +3,13 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 
-type Props = {}
+type Props = { scrolltoHash: Function }
 
-export default function Header({ }: Props) {
+export default function Header({ scrolltoHash }: Props) {
+
   return (
 
-    <header className='sticky top-0 px-4 py-2 md:p-5 flex items-start justify-between max-w7xl mx-auto z-50 xl:items-center'>
+    <header className='sticky top-0 px-4 py-2 md:p-5 flex items-start justify-between mx-auto z-50 xl:items-center'>
 
       <motion.div
         initial={{
@@ -44,14 +45,17 @@ export default function Header({ }: Props) {
         transition={{
           duration: 1.5,
         }}
-        className='flex flex-row items-center cursor-pointer navbtn'>
+        className='flex flex-row items-center cursor-pointer navbtn'
+        onClick={() => scrolltoHash('contact')}
+      >
         <SocialIcon
-          className='cursor-pointer'
+          className='cursor-pointer 2xl:scale-125 2xl:mx-3'
           network='email'
           fgColor='currentColor'
           bgColor='transparent'
+
         />
-        <p className='uppercase hidden md:inline-flex text-sm'>Get In Touch</p>
+        <p className='uppercase hidden md:inline-flex text-sm 2xl:scale-125 2xl:mx-2'>Get In Touch</p>
       </motion.div>
 
     </header>
