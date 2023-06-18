@@ -68,12 +68,12 @@ export default function Contact({ }: Props) {
             </div>
             <input {...register('subject')} className='contactInput' type="text" placeholder='Subject' />
             <textarea {...register('message')} className='contactInput' placeholder='Message'></textarea>
-            <button type='submit' className='bg-[#7928ca] py-2 md:py-4 2xl:py-5 px-10 rounded-md text-white font-bold text-lg 2xl:text-xl'>Submit</button>
+            <button type='submit' className='btneffect py-2 md:py-4 2xl:py-5 px-10 rounded-md text-white uppercase text-lg 2xl:text-xl'>Send</button>
           </form>
         </div>
       </div>
 
-      <div className='py-10 font-mono text-gray-500'><small className='flex items-center'> &copy; Made with <CodeBracketIcon className='w-5 h-5 mx-2' /> by Tarek. Circa 2023.</small></div>
+      <footer className='py-10 font-mono text-gray-500'><small className='flex items-center'> &copy; Made with <CodeBracketIcon className='w-5 h-5 mx-2' /> by Tarek. Circa 2023.</small></footer>
     </motion.div>
   )
 }

@@ -8,7 +8,7 @@ type Props = { scrolltoHash: Function }
 
 export default function Hero({ scrolltoHash }: Props) {
   const [text] = useTypewriter({
-    words: ["I Love JavaScript",
+    words: ["I Write JavaScript",
       "I build things for the <web/>"],
     loop: true,
     delaySpeed: 3500,
