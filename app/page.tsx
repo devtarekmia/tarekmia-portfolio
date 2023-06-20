@@ -43,11 +43,7 @@ export default function Home() {
       setFoot(false)
     }
 
-    // latest >= 0.1 ? setNav(true) : setNav(false);
   })
-
-
-  // return <motion.div style={{ scaleX: scrollYProgress }} />
 
   return (
 

@@ -1,5 +1,4 @@
 'use client';
-import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image'
@@ -8,8 +7,8 @@ type Props = { scrolltoHash: Function }
 
 export default function Hero({ scrolltoHash }: Props) {
   const [text] = useTypewriter({
-    words: ["I Write JavaScript",
-      "I build things for the <web/>"],
+    words: ["My writing ends with ; or />",
+      "I build things for the <web/>", "I can, because I did"],
     loop: true,
     delaySpeed: 3500,
     typeSpeed: 100 - Math.random() * 500,
