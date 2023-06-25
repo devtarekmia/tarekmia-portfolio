@@ -33,6 +33,9 @@ export default function ExperienceCard({ experiences }: Props) {
           width={400}
           height={400}
           quality={80}
+          priority={true}
+          loading='eager'
+          placeholder='blur'
           alt={experiences?.company}
         />
       </motion.div>

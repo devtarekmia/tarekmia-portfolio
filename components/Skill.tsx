@@ -36,6 +36,8 @@ export default function Skill({ directionLeft, skill }: Props) {
             height={120}
             quality={80}
             alt={skill.title}
+            loading='eager'
+            placeholder='blur'
           />
         </motion.div>
         <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-[#7928ca] w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 xl:w-28 xl:h-28 rounded-full z-0'>

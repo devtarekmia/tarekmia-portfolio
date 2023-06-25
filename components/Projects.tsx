@@ -288,6 +288,8 @@ export default function Projects({ }: Props) {
                   width={1200}
                   height={720}
                   quality={80}
+                  loading='eager'
+                  placeholder='blur'
                   alt={project.title}
                 />
               </Link>
@@ -310,6 +312,8 @@ export default function Projects({ }: Props) {
                       width={64}
                       height={64}
                       quality={80}
+                      loading='eager'
+                      placeholder='blur'
                       alt={tech.title}
                     />
                   </div>
