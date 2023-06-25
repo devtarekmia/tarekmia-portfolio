@@ -95,7 +95,7 @@ export default function Experiences({ }: Props) {
       viewport={{ once: true, }}
       className='min-h-screen flex flex-col relative text-center md:text-left max-w-full px-10 justify-evenly mx-auto items-center'>
       <h3 className='absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-xl 2xl:text-2xl'>Experience</h3>
-      <div className='w-full flex space-x-5 md:space-x-8 xl:space-x-10 2xl:space-x-14 overflow-x-auto p-10 mb-40 md:mb-20 snap-x snap-mandatory snap-always scrollbar-thin xl:scrollbar-none hover:scrollbar-thin scrollbar-track-[#14121c] scrollbar-thumb-[#7928ca] scrollbar-corner-[#7928ca] scrollbar-thumb-rounded-xl'>
+      <div className='w-full flex space-x-5 md:space-x-8 xl:space-x-10 2xl:space-x-14 overflow-x-auto p-10 mb-24 snap-x snap-mandatory snap-always scrollbar-thin xl:scrollbar-none hover:scrollbar-thin scrollbar-track-[#14121c] scrollbar-thumb-[#7928ca] scrollbar-corner-[#7928ca] scrollbar-thumb-rounded-xl'>
         {experience?.map((exp) => (
           <ExperienceCard key={exp._id} experiences={exp} />
         ))}
