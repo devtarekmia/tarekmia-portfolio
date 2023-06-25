@@ -24,7 +24,6 @@ export default function Hero({ scrolltoHash }: Props) {
         src="/square-image-updated.png"
         width={200}
         height={200}
-        priority={true}
         loading='eager'
         placeholder='blur'
         alt="It's Tarek Mia"

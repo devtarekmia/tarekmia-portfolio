@@ -287,7 +287,7 @@ export default function Projects({ }: Props) {
                   src={project.image}
                   width={1200}
                   height={720}
-                  quality={80}
+                  quality={75}
                   loading='eager'
                   placeholder='blur'
                   alt={project.title}

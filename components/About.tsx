@@ -35,7 +35,6 @@ export default function About({ }: Props) {
             width={1600}
             height={2400}
             quality={80}
-            priority={true}
             loading='eager'
             placeholder='blur'
             alt="It's Tarek Mia"
