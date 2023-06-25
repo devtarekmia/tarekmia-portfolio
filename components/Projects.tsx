@@ -74,7 +74,7 @@ export default function Projects({ }: Props) {
       ],
       "_id": "692803f4-91d2-40eb-b8cd-8b67100a1c61",
       "title": "Import-Wholesale Business Manager",
-      "linkToBuild": "/php-app-demo",
+      "linkToBuild": "/",
       "summery": "I designed and developed an import-wholesale business management application. It features a captivating animated login page and offers a fully responsive user interface. With advanced security, multi-vendor management, and comprehensive reporting capabilities (including PDF, Excel, and print), it provides efficient data entry and a personalized customer dashboard."
     },
     {

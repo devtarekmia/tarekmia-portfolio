@@ -30,9 +30,9 @@ export default function ExperienceCard({ experiences }: Props) {
         <Image
           className='relative object-contain h-full w-full rounded-full opacity-80 hover:opacity-100 transition-opacity duration-200'
           src={experiences?.companyImage}
-          width={400}
-          height={400}
-          quality={80}
+          width={200}
+          height={200}
+          quality={75}
           priority={true}
           loading='eager'
           placeholder='blur'
