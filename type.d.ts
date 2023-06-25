@@ -65,3 +65,40 @@ export interface Social extends SanityBody {
   title: string;
   url: string;
 }
+
+
+// Hard Coded Values
+
+export interface TechnologyHardCoded {
+  _id: string;
+  image: string;
+  progress: number;
+  title: string;
+}
+
+export interface ExperienceHardCoded {
+  _id: string;
+  company: string;
+  companyImage: string;
+  dateStarted: string;
+  dateEnded: any;
+  jobTitle: string;
+  points: string[];
+}
+
+export interface ProjectHardCoded {
+  _id: string;
+  title: string;
+  image: string;
+  summery: string;
+  technologies: TechnologyHardCoded[];
+  linkToBuild: string;
+
+}
+
+export interface SkillHardCoded {
+  _id: string;
+  image: string;
+  progress: number;
+  title: string;
+}

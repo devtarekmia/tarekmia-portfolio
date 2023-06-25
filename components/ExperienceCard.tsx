@@ -1,12 +1,15 @@
 'use client';
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { ExperienceHardCoded } from '@/type';
 
-type Props = {}
+type Props = {
+  experiences: ExperienceHardCoded
+}
 
-export default function ExperienceCard({ }: Props) {
+export default function ExperienceCard({ experiences }: Props) {
   return (
-    <article className='mt-28 md:mt-32 flex flex-col rounded-lg items-center space-y-2 xl:space-y-7 flex-shrink-0 min-w-min max-w-xs sm:max-w-md md:max-w-2xl xl:max-w-4xl snap-center bg-[#14121c] hover:bg-[#27253D]/40 p-10 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    <article className='mt-28 md:mt-32 flex flex-col rounded-lg items-center space-y-2 xl:space-y-7 2xl:space-y-10 flex-shrink-0 min-w-min max-w-xs sm:max-w-md md:max-w-2xl xl:max-w-4xl snap-center bg-[#14121c] hover:bg-[#27253D]/40 p-10 xl:py-16 2xl:py-20 cursor-pointer transition-opacity duration-200 overflow-hidden'>
       <motion.div
         initial={{
           y: -100,
@@ -20,63 +23,30 @@ export default function ExperienceCard({ }: Props) {
           once: true,
         }}
         transition={{
-          duration: 1.2,
+          type: 'spring', duration: 1
         }}
-        className='flex-shrink-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 xl:w-48 xl:h-48'
+        className='flex-shrink-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 2xl:w-44 2xl:h-44'
       >
         <Image
-          className='relative object-cover h-full w-full rounded-full opacity-80 hover:opacity-100 transition-opacity duration-200'
-          src="/sticker.webp"
+          className='relative object-contain h-full w-full rounded-full opacity-80 hover:opacity-100 transition-opacity duration-200'
+          src={experiences?.companyImage}
           width={400}
           height={400}
           quality={80}
-          alt="Work Experices"
+          alt={experiences?.company}
         />
       </motion.div>
-      <div className='text-left px-0 xl:px-10 space-y-1 pt-3 xl:pt-0'>
-        <h4 className='text-3xl md:text-4xl font-light'>Work header</h4>
-        <p className='font-bold text-xl md:text-2xl mt-1 opacity-80 hover:opacity-100 transition-opacity duration-200'>Company</p>
-        <div className='flex space-x-3 pt-2'>
-          <Image
-            className='w-10 h-10 object-cover rounded-full opacity-80 hover:opacity-100 transition-opacity duration-200'
-            src="/vercel.svg"
-            width={100}
-            height={100}
-            quality={80}
-            alt="Technologies Used"
-          />
-          <Image
-            className='w-10 h-10 object-cover rounded-full opacity-80 hover:opacity-100 transition-opacity duration-200'
-            src="/vercel.svg"
-            width={100}
-            height={100}
-            quality={80}
-            alt="Technologies Used"
-          />
-          <Image
-            className='w-10 h-10 object-cover rounded-full opacity-80 hover:opacity-100 transition-opacity duration-200'
-            src="/vercel.svg"
-            width={100}
-            height={100}
-            quality={80}
-            alt="Technologies Used"
-          />
-          <Image
-            className='w-10 h-10 object-cover rounded-full opacity-80 hover:opacity-100 transition-opacity duration-200'
-            src="/vercel.svg"
-            width={100}
-            height={100}
-            quality={80}
-            alt="Technologies Used"
-          />
-        </div>
-        <p className='uppercase py-2 xl:py-5 text-gray-300 opacity-80 hover:opacity-100 transition-opacity duration-200'>Date to Date</p>
-        <ul className='list-disc space-y-1 md:space-y-2 xl:space-y-4 ml-5 text-sm md:text-base xl:text-lg opacity-80 hover:opacity-100 transition-opacity duration-200'>
-          <li>Lorem ipsum dolor, si amet consectetur adipisicing elit. Inventoe, distinctio!</li>
-          <li>Lorem ium dolor, sit amet consetur adipisicing elit. Inventore, distinctio!</li>
-          <li>Lorem ipsum dolor, sit amet consectetur adipising elit. Inventore, distinctio!</li>
-          <li>Lorem ipsum dolor, sit amet consectur adipicing elit.nventore, diinctio!</li>
-          <li>Lorem ipm dolor, sit amet consectetur adipisicing elit. Inventore, distinctio!</li>
+      <div className='text-left px-0 xl:px-10 space-y-1 pt-7 '>
+        <h4 className='text-2xl md:text-4xl xl:text-5xl font-light md:whitespace-nowrap'>{experiences.jobTitle}</h4>
+        <p className='text-xl text-[#7928ca] md:text-2xl mt-1 opacity-80 hover:opacity-100 transition-opacity duration-200'>{experiences.company}</p>
+
+        <p className='uppercase py-2 xl:py-5 text-gray-300 opacity-80 hover:opacity-100 transition-opacity duration-200'>
+          {new Date(experiences.dateStarted).toLocaleDateString("en-US", { month: "short", day: "2-digit", year: "numeric" })} - {experiences.dateEnded ? new Date(experiences.dateEnded).toLocaleDateString("en-US", { month: "short", day: "2-digit", year: "numeric" }) : 'present'}
+        </p>
+        <ul className='list-disc space-y-1 xl:space-y-2 2xl:space-y-3 ml-6 text-sm md:text-base xl:text-lg opacity-80 hover:opacity-100 transition-opacity duration-200'>
+          {experiences.points.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
         </ul>
       </div>
     </article>

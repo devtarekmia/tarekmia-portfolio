@@ -21,13 +21,13 @@ export default function Hero({ scrolltoHash }: Props) {
       <BackgroundCircles />
       <Image
         className='relative rounded-full w-32 h-32 xl:w-36 xl:h-36 mx-auto object-cover'
-        src="/sticker.webp"
-        width={100}
-        height={100}
+        src="/square-image-updated.png"
+        width={200}
+        height={200}
         alt="It's Tarek Mia"
       />
       <div className='z-30 space-y-4'>
-        <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Web Developer</h2>
+        <h2 className='text-sm xl:text-lg uppercase text-gray-500 pb-2 tracking-[15px]'>Web Developer</h2>
         <h1 className='text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-semibold px-8'>
           Hi, I&apos;m <span className='text-[#9E4BEE]'>Tarek Mia</span>
         </h1>

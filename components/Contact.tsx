@@ -34,10 +34,10 @@ export default function Contact({ }: Props) {
     <motion.div
       initial={{ opacity: 0, }}
       whileInView={{ opacity: 1, }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1 }}
       viewport={{ once: true, }}
       className='flex flex-col relative min-h-screen xl:max-w-7xl 2xl:max-w-[80%] p-10 justify-evenly mx-auto items-center touch-pan-y'>
-      <h3 className='uppercase tracking-[20px] text-gray-500 text-xl mt-8 sm:mt-16'>Contact</h3>
+      <h3 className='uppercase tracking-[20px] text-gray-500 text-xl 2xl:text-2xl mt-8 sm:mt-16'>Contact</h3>
 
       <div className='text-center flex flex-col justify-evenly items-center pb-10 mt-8 space-y-8'>
         <h4 className='text-2xl md:text-3xl 2xl:text-4xl font-semibold text-center'>

@@ -21,7 +21,7 @@
     @apply text-gray-500 hover:border-[#7928ca]/60 hover:text-[#9E4BEE] 2xl:mx-2
   }
   .herobtn {
-    @apply px-6 py-2 border border-[#242424]/0 rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#7928ca]/60 hover:text-[#9E4BEE]
+    @apply px-6 py-2 border border-[#242424]/0 rounded-full uppercase text-xs xl:text-sm tracking-widest text-gray-500 transition-all hover:border-[#7928ca]/60 hover:text-[#9E4BEE]
   }
   .contactInput {
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-3 md:py-4 2xl:py-5 border-[#242424] 2xl:text-xl text-[#9E4BEE] placeholder-gray-500 transition-all hover:border-[#7928ca]/50 focus:border-[#7928ca]/50 focus:text-gray-200
@@ -45,11 +45,11 @@
     transform: scale3d(1.05,1.05,1);
   }
 
-  #back-to-top, .navbtn {
+  #back-to-top, .navbtn, .skill-logo {
     transition: transform .3s cubic-bezier(.175,.885,.32,1.275)
   }
 
-  #back-to-top:hover, .navbtn:hover{
+  #back-to-top:hover, .navbtn:hover, .skill-logo:hover{
      transform: scale3d(1.1,1.1,1) !important;
   }
 
@@ -72,7 +72,7 @@
     mask-image: linear-gradient(to top, transparent, black);
     z-index: -1;
     animation: fadeIn 0.6s ease-in; 
-  }
+    }
 
   @keyframes fadeIn {  
     from {  

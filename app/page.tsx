@@ -79,7 +79,7 @@ export default function Home() {
         <Image
           id="back-to-top"
           className='relative rounded-full w-8 h-8 mx-auto object-cover cursor-pointer grayscale hover:grayscale-0'
-          src="/sticker.webp"
+          src="/square-image-updated.png"
           width={100}
           height={100}
           alt="Go to Top"
