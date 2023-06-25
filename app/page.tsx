@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef, useState } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
 
@@ -46,47 +47,49 @@ export default function Home() {
   })
 
   return (
+    <>
+      <div ref={ref} id="content" className="bg-[#0f0d15] text-white h-screen mt-0 snap-y snap-mandatory snap-always xl:snap-none overflow-y-auto overflow-x-hidden z-0 select-none scrollbar-thin scrollbar-track-[#14121c] scrollbar-thumb-[#7928ca]">
 
-    <div ref={ref} id="content" className="bg-[#0f0d15] text-white h-screen mt-0 snap-y snap-mandatory snap-always xl:snap-none overflow-y-auto overflow-x-hidden z-0 select-none scrollbar-thin scrollbar-track-[#14121c] scrollbar-thumb-[#7928ca]">
+        <Header scrolltoHash={scrolltoHash} navDotted={navDotted} navShow={navShow} />
 
-      <Header scrolltoHash={scrolltoHash} navDotted={navDotted} navShow={navShow} />
+        <section id="hero" className="snap-start">
+          <Hero scrolltoHash={scrolltoHash} />
+        </section>
 
-      <section id="hero" className="snap-start">
-        <Hero scrolltoHash={scrolltoHash} />
-      </section>
+        <section id="about" className="snap-start">
+          <About />
+        </section>
 
-      <section id="about" className="snap-start">
-        <About />
-      </section>
+        <section id="experience" className="snap-start">
+          <Experiences />
+        </section>
 
-      <section id="experience" className="snap-start">
-        <Experiences />
-      </section>
+        <section id="skills" className="snap-start">
+          <Skills />
+        </section>
 
-      <section id="skills" className="snap-start">
-        <Skills />
-      </section>
+        <section id="projects" className="snap-start">
+          <Projects />
+        </section>
 
-      <section id="projects" className="snap-start">
-        <Projects />
-      </section>
+        <section id="contact" className="snap-start">
+          <Contact />
+        </section>
 
-      <section id="contact" className="snap-start">
-        <Contact />
-      </section>
+        <div className={`${footBtnShow ? 'bottom-6' : '-bottom-40'} fixed z-50 w-full transition-all duration-1000`}>
+          <Image
+            id="back-to-top"
+            className='relative rounded-full w-8 h-8 mx-auto object-cover cursor-pointer grayscale hover:grayscale-0'
+            src="/square-image-updated.png"
+            width={100}
+            height={100}
+            alt="Go to Top"
+            onClick={() => scrolltoHash('hero')}
+          />
+        </div>
 
-      <div className={`${footBtnShow ? 'bottom-6' : '-bottom-40'} fixed z-50 w-full transition-all duration-1000`}>
-        <Image
-          id="back-to-top"
-          className='relative rounded-full w-8 h-8 mx-auto object-cover cursor-pointer grayscale hover:grayscale-0'
-          src="/square-image-updated.png"
-          width={100}
-          height={100}
-          alt="Go to Top"
-          onClick={() => scrolltoHash('hero')}
-        />
       </div>
-
-    </div>
+      <Analytics />
+    </>
   )
 }
