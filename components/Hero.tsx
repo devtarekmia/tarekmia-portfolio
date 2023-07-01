@@ -2,6 +2,7 @@
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import Image from 'next/image'
+import profilePic from '../public/square-image-updated.png'
 
 type Props = { scrolltoHash: Function }
 
@@ -21,7 +22,7 @@ export default function Hero({ scrolltoHash }: Props) {
       <BackgroundCircles />
       <Image
         className='relative rounded-full w-32 h-32 xl:w-36 xl:h-36 mx-auto object-cover'
-        src="/square-image-updated.png"
+        src={profilePic}
         width={200}
         height={200}
         loading='eager'

@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react';
+import myImage from '../public/cropped-image.png'
 
 type Props = {}
 
@@ -31,7 +32,7 @@ export default function About({ }: Props) {
         >
           <Image
             className='relative object-cover h-full w-full rounded-full md:rounded-lg'
-            src="/cropped-image.png"
+            src={myImage}
             width={1600}
             height={2400}
             quality={80}

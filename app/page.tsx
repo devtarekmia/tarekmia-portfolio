@@ -10,6 +10,7 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { Analytics } from '@vercel/analytics/react';
+import profilePic from '../public/square-image-updated.png'
 
 export default function Home() {
 
@@ -80,7 +81,7 @@ export default function Home() {
           <Image
             id="back-to-top"
             className='relative rounded-full w-8 h-8 mx-auto object-cover cursor-pointer grayscale hover:grayscale-0'
-            src="/square-image-updated.png"
+            src={profilePic}
             width={100}
             height={100}
             alt="Go to Top"
