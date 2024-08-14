@@ -8,8 +8,24 @@ type Props = {}
 export default function Experiences({ }: Props) {
   const experience: ExperienceHardCoded[] = [
     {
+      "_id": "a34f0dcf-7bbe-4a7c-9fc3-efcb23d5e571",
+      "jobTitle": "Senior Executive (IT)",
+      "company": "Himalaya Brokers Limited",
+      "dateStarted": "2023-09-01",
+      "dateEnded": null,
+      "companyImage": "/hbl-logo.svg",
+      "points": [
+        "Develop and maintain web applications using Laravel, Vue, and Vuetify.",
+        "Design visually appealing and responsive user interfaces.",
+        "Ensure cross-browser and cross-device compatibility for seamless user experience.",
+        "Implement complex business logic to ensure efficient and effective data management.",
+        "Generate print ready reports for internal use.",
+        "Deploy applications to production servers to ensure smooth and secure operation.",
+      ],
+    },
+    {
       "_id": "d11555e2-6744-4b51-8d26-2d3366e26852",
-      "jobTitle": "Full-Stack Developer",
+      "jobTitle": "Expert Laravel SPA Developer",
       "company": "Upwork",
       "dateStarted": "2023-06-01",
       "dateEnded": null,
@@ -27,7 +43,7 @@ export default function Experiences({ }: Props) {
       "jobTitle": "Full-Stack Developer",
       "company": "Fiverr",
       "dateStarted": "2023-06-01",
-      "dateEnded": null,
+      "dateEnded": "2024-08-13",
       "companyImage": "/fiverr.png",
       "points": [
         "Develop end-to-end web solutions, taking ownership of both front-end and back-end development tasks.",
@@ -54,24 +70,8 @@ export default function Experiences({ }: Props) {
       ]
     },
     {
-      "_id": "a34f0dcf-7bbe-4a7c-9fc3-efcb23d5e571",
-      "jobTitle": "Front-end Developer",
-      "company": "3Devs IT Limited",
-      "dateStarted": "2021-02-01",
-      "dateEnded": "2021-06-30",
-      "companyImage": "/3dev-icon.png",
-      "points": [
-        "Develop visually appealing and responsive user interfaces.",
-        "Ensure cross-browser and cross-device compatibility for seamless user experience.",
-        "Implement interactivity and dynamic functionality using JavaScript frameworks and libraries.",
-        "Optimize website performance by optimizing code, images, and assets.",
-        "Maintain and update existing front-end codebases to improve performance and user experience.",
-        "Stay updated with the latest front-end development trends and best practices."
-      ],
-    },
-    {
       "_id": "2981e073-a4c8-479c-bb02-fdcc46874aed",
-      "jobTitle": "Front-end Developer",
+      "jobTitle": "Web Developer",
       "company": "@SixtynineDirectories",
       "dateStarted": "2022-01-01",
       "dateEnded": null,

@@ -9,6 +9,24 @@ export default function Skills({ }: Props) {
 
   const skills: SkillHardCoded[] = [
     {
+      "progress": 95,
+      "image": "/laravel-logo-full.png",
+      "_id": "a03da042-fedd-4912-a281-0ecd71056f8a",
+      "title": "Laravel"
+    },
+    {
+      "_id": "f534c3d4-0cf3-4dd8-bbaf-1a95a12a9d56",
+      "title": "PHP",
+      "progress": 85,
+      "image": "/php-logo-white.png"
+    },
+    {
+      "_id": "3f7930f6-08e2-4680-b9cb-329af312168c",
+      "title": "SQL",
+      "progress": 80,
+      "image": "/postgresql-plain.png"
+    },
+    {
       "image": "/typescript.png",
       "_id": "cce73af9-c51d-455d-bc85-b4199e0a09b4",
       "title": "TypeScript",
@@ -21,16 +39,34 @@ export default function Skills({ }: Props) {
       "_id": "35f0401e-5690-4dcc-92c8-565913cbedc3"
     },
     {
-      "_id": "f534c3d4-0cf3-4dd8-bbaf-1a95a12a9d56",
-      "title": "PHP",
-      "progress": 85,
-      "image": "/php-logo-white.png"
+      "_id": "a1519c98-2f4a-4a6c-85f9-825b1acde582",
+      "title": "Python",
+      "progress": 90,
+      "image": "/python-5.png"
     },
     {
-      "_id": "3f7930f6-08e2-4680-b9cb-329af312168c",
-      "title": "MySQL",
+      "title": "InertiaJS",
+      "progress": 80,
+      "image": "/inertia.png",
+      "_id": "f34e1cb0-ee26-4a7a-9c21-41d6b27615b3"
+    },
+    {
+      "_id": "6749ee8e-b1c0-41a9-be69-6e46ccee7a7c",
+      "title": "Vue",
       "progress": 75,
-      "image": "/mySQL.png"
+      "image": "/vue-logo.svg",
+    },
+    {
+      "_id": "8337eeae-6931-45f1-a30d-ac476715fa5e",
+      "title": "Vuetify",
+      "progress": 80,
+      "image": "/vuetify.svg"
+    },
+    {
+      "title": "React",
+      "progress": 50,
+      "image": "/react-2.png",
+      "_id": "58221c20-a7f7-43a8-aeb8-d00810b08877"
     },
     {
       "_id": "8b53d09c-714d-47f0-8215-32365efddf3d",
@@ -45,40 +81,22 @@ export default function Skills({ }: Props) {
       "image": "/next-alt.png"
     },
     {
+      "title": "AWS",
+      "progress": 85,
+      "image": "/aws-logo.svg",
+      "_id": "drafts.4a493045-cd09-486c-bbc2-45d4da57a8aa"
+    },
+    {
       "_id": "1b51a9d0-21ce-4daa-97ee-1b4edaf7d9ee",
       "title": "Vercel",
-      "progress": 85,
+      "progress": 80,
       "image": "/vercel.png"
     },
     {
       "_id": "00aeb06a-d761-4bb2-ad6a-25efed03f2f7",
       "title": "SANITY",
-      "progress": 80,
+      "progress": 50,
       "image": "/sanity.png"
-    },
-    {
-      "title": "JQuery",
-      "progress": 90,
-      "image": "/jquery-alt.png",
-      "_id": "f34e1cb0-ee26-4a7a-9c21-41d6b27615b3"
-    },
-    {
-      "title": "React",
-      "progress": 80,
-      "image": "/react-2.png",
-      "_id": "58221c20-a7f7-43a8-aeb8-d00810b08877"
-    },
-    {
-      "progress": 95,
-      "image": "/html.png",
-      "_id": "a03da042-fedd-4912-a281-0ecd71056f8a",
-      "title": "HTML5"
-    },
-    {
-      "_id": "6749ee8e-b1c0-41a9-be69-6e46ccee7a7c",
-      "title": "CSS3",
-      "progress": 95,
-      "image": "/css-3.png",
     },
     {
       "_id": "aeccfac5-e01a-45c2-b8e3-a9df50a8acd7",
@@ -105,18 +123,6 @@ export default function Skills({ }: Props) {
       "title": "Illustrator"
     },
     {
-      "title": "Terminal",
-      "progress": 85,
-      "image": "/terminal-1.png",
-      "_id": "drafts.4a493045-cd09-486c-bbc2-45d4da57a8aa"
-    },
-    {
-      "_id": "a1519c98-2f4a-4a6c-85f9-825b1acde582",
-      "title": "npm",
-      "progress": 90,
-      "image": "/npm.png"
-    },
-    {
       "progress": 85,
       "image": "/yarn.png",
       "_id": "a023b888-ba83-4891-8716-4c054d6b8bcc",
@@ -129,6 +135,12 @@ export default function Skills({ }: Props) {
       "title": "VS Code"
     },
     {
+      "progress": 80,
+      "image": "/clean-code-logo.svg",
+      "_id": "accfe2fb-631c-4674-bf24-8152c52fac1e",
+      "title": "Clean Code"
+    },
+    {
       "image": "/git-icon.png",
       "_id": "ccdd598e-3361-4c99-b96f-4d171980df47",
       "title": "Git",
@@ -139,19 +151,6 @@ export default function Skills({ }: Props) {
       "_id": "5df84026-1047-48a2-9477-9aebfc9ec8bb",
       "title": "GitHub",
       "progress": 85
-    },
-    {
-      "_id": "8337eeae-6931-45f1-a30d-ac476715fa5e",
-      "title": "DigitalOccean",
-      "progress": 85,
-      "image": "/digitalocean-icon-1.png"
-    },
-    {
-      "progress": 90,
-      "image": "/office-1.png",
-      "_id": "accfe2fb-631c-4674-bf24-8152c52fac1e",
-      "title":
-        "Office"
     }
   ];
 

@@ -8,7 +8,7 @@ type Props = { scrolltoHash: Function }
 
 export default function Hero({ scrolltoHash }: Props) {
   const [text] = useTypewriter({
-    words: ["My writing ends with ; or />",
+    words: ["My writing ends with ; or >",
       "I build things for the <web/>", "I can, because I did"],
     loop: true,
     delaySpeed: 3500,
@@ -30,7 +30,7 @@ export default function Hero({ scrolltoHash }: Props) {
         alt="It's Tarek Mia"
       />
       <div className='z-30 space-y-4'>
-        <h2 className='text-sm xl:text-lg uppercase text-gray-500 pb-2 tracking-[15px]'>Web Developer</h2>
+        <h2 className='text-sm xl:text-lg uppercase text-gray-500 pb-2 tracking-[15px]'>Laravel Expert</h2>
         <h1 className='text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-semibold px-8'>
           Hi, I&apos;m <span className='text-[#9E4BEE]'>Tarek Mia</span>
         </h1>

@@ -9,7 +9,7 @@ type Props = { scrolltoHash: Function, navDotted: boolean, navShow: boolean }
 export default function Header({ scrolltoHash, navDotted, navShow }: Props) {
 
   const openFiverr = function () {
-    window.open("https://www.fiverr.com/devtarekmia");
+    window.open("https://www.fiverr.com/");
   };
 
   const openUpwork = function () {
@@ -35,8 +35,8 @@ export default function Header({ scrolltoHash, navDotted, navShow }: Props) {
         }}
         className='flex flex-row items-center z-50'>
         <SocialIcon url='https://github.com/devtarekmia' target='_blank' fgColor='currentColor' bgColor='transparent' className='navbtn scale-90' />
-        <SocialIcon url='https://dribbble.com/' target='_blank' fgColor='currentColor' bgColor='transparent' className='navbtn scale-90' />
-        <SocialIcon url='https://linkedin.com/' target='_blank' fgColor='currentColor' bgColor='transparent' className='navbtn scale-90' />
+        <SocialIcon url='https://wa.me/+8801796821678' target='_blank' fgColor='currentColor' bgColor='transparent' className='navbtn scale-90' />
+        <SocialIcon url='https://linkedin.com/in/devtarekmia' target='_blank' fgColor='currentColor' bgColor='transparent' className='navbtn scale-90' />
         <SocialIcon url='https://t.me/tarekmia' target='_blank' fgColor='currentColor' bgColor='transparent' className='navbtn scale-90' />
       </motion.div>
       <motion.div

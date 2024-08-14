@@ -11,7 +11,32 @@ export default function Projects({ }: Props) {
     {
       "image": "/import-business-manager.png",
       "technologies": [
+
+
         {
+          "_id": "f534c3d4-0cf3-4dd8-bbaf-1a95a12a9d56",
+          "title": "PHP",
+          "image": "/php-logo-white.png",
+          "progress": 85
+        },
+        {
+          "_id": "3f7930f6-08e2-4680-b9cb-329af312168c",
+          "title": "MySQL",
+          "image": "/mySQL.png",
+          "progress": 75
+        },
+        {
+          "progress": 80,
+          "_id": "35f0401e-5690-4dcc-92c8-565913cbedc3",
+          "title": "JavaScript",
+          "image": "/logo-javascript.png"
+        },
+        {
+          "_id": "f34e1cb0-ee26-4a7a-9c21-41d6b27615b3",
+          "title": "JQuery",
+          "image": "/jquery-alt.png",
+          "progress": 90
+        }, {
           "progress": 95,
           "_id": "a03da042-fedd-4912-a281-0ecd71056f8a",
           "title": "HTML5",
@@ -28,30 +53,6 @@ export default function Projects({ }: Props) {
           "image": "/bootstrap-5-1.png",
           "progress": 95,
           "_id": "6dfd1532-df82-43d3-b11c-e2020be73c23"
-        },
-        {
-          "progress": 80,
-          "_id": "35f0401e-5690-4dcc-92c8-565913cbedc3",
-          "title": "JavaScript",
-          "image": "/logo-javascript.png"
-        },
-        {
-          "_id": "f34e1cb0-ee26-4a7a-9c21-41d6b27615b3",
-          "title": "JQuery",
-          "image": "/jquery-alt.png",
-          "progress": 90
-        },
-        {
-          "_id": "f534c3d4-0cf3-4dd8-bbaf-1a95a12a9d56",
-          "title": "PHP",
-          "image": "/php-logo-white.png",
-          "progress": 85
-        },
-        {
-          "_id": "3f7930f6-08e2-4680-b9cb-329af312168c",
-          "title": "MySQL",
-          "image": "/mySQL.png",
-          "progress": 75
         },
         {
           "_id": "4a493045-cd09-486c-bbc2-45d4da57a8aa",
@@ -76,57 +77,6 @@ export default function Projects({ }: Props) {
       "title": "Import-Wholesale Business Manager",
       "linkToBuild": "/",
       "summery": "I designed and developed an import-wholesale business management application. It features a captivating animated login page and offers a fully responsive user interface. With advanced security, multi-vendor management, and comprehensive reporting capabilities (including PDF, Excel, and print), it provides efficient data entry and a personalized customer dashboard."
-    },
-    {
-      "_id": "6a0c645d-6638-493b-93be-219442181d5a",
-      "title": "Shohoz",
-      "linkToBuild": "https://www.shohoz.com/",
-      "summery": "Shohoz, a flagship venture of Shohoj Limited, stands as Bangladesh's premier online ticket destination. As a front-end developer, it was an absolute pleasure to collaborate on the web development project for Shohoz. The hero page showcases a captivating image of the ticket destination along with a delightful array of cuisines, creating an immersive and visually appealing experience.",
-      "image": "/shohoz.png",
-      "technologies": [
-        {
-          "_id": "a03da042-fedd-4912-a281-0ecd71056f8a",
-          "title": "HTML5",
-          "image": "/html.png",
-          "progress": 95
-        },
-        {
-          "title": "CSS3",
-          "image": "/css-3.png",
-          "progress": 95,
-          "_id": "6749ee8e-b1c0-41a9-be69-6e46ccee7a7c"
-        },
-        {
-          "_id": "35f0401e-5690-4dcc-92c8-565913cbedc3",
-          "title": "JavaScript",
-          "image": "/logo-javascript.png",
-          "progress": 80
-        },
-        {
-          "_id": "f34e1cb0-ee26-4a7a-9c21-41d6b27615b3",
-          "title": "JQuery",
-          "image": "/jquery-alt.png",
-          "progress": 90
-        },
-        {
-          "_id": "ccdd598e-3361-4c99-b96f-4d171980df47",
-          "title": "Git",
-          "image": "/git-icon.png",
-          "progress": 85
-        },
-        {
-          "image": "/github-icon-1.png",
-          "_id": "5df84026-1047-48a2-9477-9aebfc9ec8bb",
-          "title": "GitHub",
-          "progress": 85
-        },
-        {
-          "progress": 95,
-          "_id": "c6b45188-3ab9-4d86-8e7a-930e5415c977",
-          "title": "VS Code",
-          "image": "/vscode.png"
-        }
-      ]
     },
     {
       "image": "/tarekmia.png",
@@ -195,6 +145,18 @@ export default function Projects({ }: Props) {
       "image": "/24x7.png",
       "technologies": [
         {
+          "_id": "0d558102-7c09-455a-bb12-6e6682a4dbd6",
+          "title": "Python",
+          "progress": 80,
+          "image": "/python-5.png"
+        },
+        {
+          "title": "JavaScript",
+          "progress": 80,
+          "image": "/logo-javascript.png",
+          "_id": "35f0401e-5690-4dcc-92c8-565913cbedc3"
+        },
+        {
           "progress": 95,
           "image": "/html.png",
           "_id": "a03da042-fedd-4912-a281-0ecd71056f8a",
@@ -217,18 +179,6 @@ export default function Projects({ }: Props) {
           "title": "Font Awesome",
           "progress": 95,
           "image": "/fontawesome-1.png"
-        },
-        {
-          "title": "JavaScript",
-          "progress": 80,
-          "image": "/logo-javascript.png",
-          "_id": "35f0401e-5690-4dcc-92c8-565913cbedc3"
-        },
-        {
-          "_id": "0d558102-7c09-455a-bb12-6e6682a4dbd6",
-          "title": "Python",
-          "progress": 80,
-          "image": "/python-5.png"
         },
         {
           "_id": "8b153430-c038-4af3-b257-f38e0f29da68",

@@ -43,13 +43,13 @@ export default function About({ }: Props) {
         </motion.div>
 
         <div className='space-y-5 2xl:space-y-10 px-0 sm:pl-10 mb-20'>
-          <h4 className='text-4xl md:text-5xl 2xl:text-7xl mb-6 md:mb-0 font-semibold'>Here is a <span className='underline decoration-[#7928ca]/50'>little</span> background</h4>
+          <h4 className='text-4xl md:text-5xl 2xl:text-7xl mb-6 md:mb-0 font-semibold'>Expert <span className='underline decoration-[#7928ca]/50'>Laravel</span>  SPA Developer</h4>
           <p className='text-base leading-normal md:leading-relaxed 2xl:leading-loose xl:text-lg 2xl:text-xl max-h-64 md:max-h-72 2xl:max-h-fit overflow-y-auto opacity-80 hover:opacity-100 scrollbar-none hover:scrollbar-thin scrollbar-track-[#14121c] scrollbar-thumb-[#7928ca] scrollbar-corner-[#7928ca] scrollbar-thumb-rounded-xl'>
-            I specialize in creating vibrant websites that authentically reflect my clients&apos; brands, visions, and unique personalities. With unwavering support and clear communication, I prioritize exceptional service throughout the entire journey. Constantly learning and sharing experiences, I stay at the forefront of industry trends.
+            I’m here to support you in getting your project up and running on production, or to help you transform your creative ideas into functional code blocks.
             <br className='mb-3' />
-            My area of expertise lies in Responsive Web Application development, utilizing powerful frameworks like Tailwind CSS and Bootstrap. With a versatile skill set encompassing TypeScript, JavaScript, PHP, MySQL, Node.js, Next.js, React, Sanity, jQuery, HTML5, CSS3, Photoshop, Illustrator, Yarn, VS Code, Git, and GitHub, I offer comprehensive solutions tailored to your needs. By combining technical proficiency with a keen eye for design aesthetics, I craft websites that seamlessly align with your brand identity.
+            I am experienced in building single page applications using my favorite frameworks, Laravel, Inertia & Vue. I have working experience with MVC (Model View Controller). I have also designed and developed web user controls, pdf pages, validation controls, using technologies like TailwindCSS, Vuetify, Vuelidate, Axios.
             <br className='mb-3' />
-            As an independent professional, I offer flexibility and an unwavering commitment to ongoing growth, ensuring the delivery of exceptional service and optimal productivity for my clients. I am excited to contribute my expertise to the success of your projects, tailored to your specific requirements. If you believe that I am the ideal fit for you and your esteemed team, I eagerly await the opportunity to connect with you!
+            When working on a new project, I like to speak with my clients so that I can have a clear understanding of their needs and vision of the project. Thanks for spending some time with me. I look forward to working with you soon.
           </p>
         </div>
       </div>
